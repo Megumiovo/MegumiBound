@@ -1,0 +1,38 @@
+Prefix: '[MegumiBound]'
+MYSQL:
+  Enable: true
+  Host: '127.0.0.1'
+  Port: '3306'
+  Database: 'megumi'
+  Table: 'bound'
+  Users: 'root'
+  Password: 'weiboss'
+Config:
+  Death_Inventory_Drop: false
+  #是否死亡后掉落背包非绑定物品
+  Prevent_Item_Drop: true
+  #是否防止绑定物品丢弃
+  Delete_On_Drop: false
+  #绑定物品丢弃后是否消失
+  Allow_Item_Storing: true
+  #是否允许绑定物品放入容器中
+  Block_Commands:
+  #绑定物品在手中时,禁止使用的命令
+    - 'global '
+  White_Lore:
+  #带有以下lore的物品不会掉落
+    - '&b菜单'
+Bound:
+  Format: '&e&l[&c&l!&e&l]&2灵魂绑定: &7&o%player%'
+  AfterBind_1: '&6灵魂绑定'
+  AfterBind_2: '%player%'
+  BindOnPickup: '&4拾取后绑定'
+  BindOnUse: '&4使用后绑定'
+  BindOnEquip: '&4装备后绑定'
+Gui:
+  Title: '&8&l[&c绑定箱子&8&l]'
+  Button:
+    Info:
+      ID: 339
+      Data: 0
+      Name: '右键物品取回'

@@ -1,0 +1,11 @@
+name: MegumiBound
+description: Megumi's soul binding
+main: com.taylorswiftcn.megumi.bound.MegumiBound
+version: 1.0
+author: Wei_Boss
+depend:
+  - ProtocolLib
+
+commands:
+  mb:
+    description: show all command
